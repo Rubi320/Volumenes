@@ -20,6 +20,8 @@ docker run -it -p 8000:80 -v /home/asir2/Documentos/Volumenes/htdocs:/usr/local/
 
 5. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
 
+Creo un file.html dentro de la carpeta htdocs que es la carpeta donde guarda Apache2 las paginas web pero en este caso la carpeta es la de nuestro repositorio. En el html escribimos con la etiqueta <html>
+
 docker run -d -it -p 8000:80 -v /home/asir2/Documentos/Volumenes/htdocs:/usr/local/apache2/htdocs --name asir_httpd httpd
 
 http://localhost:8000/file.html
@@ -29,3 +31,15 @@ http://localhost:8000/file.html
 docker run -d -it -p 8000:80 -v /home/asir2/Documentos/Volumenes/htdocs:/usr/local/apache2/htdocs --name asir_web1 httpd
 
 7. Utiliza Code para hacer un hola mundo en html
+
+Seguimos los pasos que hicimos en el apartado 5. Creamos otro html.
+
+8. Crea otro contenedor 'asir_web2' con el mismo directorio y a otro puerto, por ejemplo 9080.
+
+docker run -d -it -p 9080:80 -v /home/asir2/Documentos/Volumenes/htdocs:/usr/local/apache2/htdocs --name asir_web2 httpd
+
+9. Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador 
+
+10. Tienen que salir la misma página web   
+
+Es correcto los dos servidos desde distintos puertos de host muestran la misma pagina web.
