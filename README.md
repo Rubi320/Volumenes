@@ -42,4 +42,4 @@ Seguimos los pasos que hicimos en el apartado 5. Creamos otro html.
 
 ## 10. Tienen que salir la misma página web   
 
-Es correcto los dos servidos desde distintos puertos de host muestran la misma pagina web.
+Es correcto los dos servidores desde distintos puertos de host muestran la misma pagina web.
